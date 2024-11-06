@@ -1,7 +1,7 @@
-export default function Home() {
+export default function HomeSection() {
     return (
         <>
-
+            <h1>Home Screen</h1>
         </>
     );
 }
