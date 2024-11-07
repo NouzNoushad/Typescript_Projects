@@ -1,11 +1,5 @@
 import mongoose, { Schema, connect, model } from "mongoose";
-
-interface Product {
-    name: String;
-    brand?: String;
-    price: Number;
-    description?: String;
-}
+import { Product } from "../interface/product_interface";
 
 const productSchema = new Schema<Product>({
     name: {
