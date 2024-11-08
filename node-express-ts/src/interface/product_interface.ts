@@ -4,3 +4,9 @@ export interface Product {
     price: Number;
     description?: String;
 }
+
+export interface ProductsState {
+    entities: Product[]
+    loading: 'idle' | 'pending' | 'succeed' | 'failed'
+    error: string | null
+}
